@@ -12,7 +12,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
-    @if (App::environment('production'))
+    @if(app('env') == 'production')
       <script src="{{ secure_asset('js/app.js') }}" defer></script>
       <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     @else
